@@ -1,6 +1,8 @@
 const App = () => {
   return (
-    <h1>Rho Chapture Website 2025</h1>
+    <h1 className="text-3xl font-bold underline text-indigo-700">
+    Rho Chapter Website
+  </h1>
   )
 }
 
