@@ -3,7 +3,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from 'gsap'; 
 const Showcase = () => {
 
-    const isTablet = useMediaQuery({query: '(max-wdith: 1024)'}); 
+    const isTablet = useMediaQuery({query: '(max-width: 1024px)'}); 
 
     useGSAP(()=> {
         if(!isTablet){
