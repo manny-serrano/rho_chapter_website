@@ -25,30 +25,34 @@ const Showcase = () => {
   return (
     <section id ="showcase">
         <div className ="media">
-            <video src="/videos/game.mp4" loop muted autoPlay playsInline/>
+            <video src="/videos/dukevideo.mp4" loop muted autoPlay playsInline/>
             <div className="mask">
-                <img src ="/mask-logo.svg" /> 
+                <img src ="/raging-logo.svg" /> 
+                
+                
             </div>
         </div>
 
         <div className ="content">
             <div className ="wrapper">
                 <div className ="lg:max-w-md"> 
-                    <h2> Rocket Chip </h2> 
+                    <h2> Established 1995 </h2> 
 
                     <div className="space-y-5 mt-7 pe-10"> 
-                        <p> Introducing {" "}
-                        <span className="text-white"> M4, the next generation of Apple silicon </span> 
-                        . M4 powers
+                        <p> Introducing {" "} the
+                        <span style={{color: '#EEAA00'}}> Raging Rho Chapter </span>  of 
+                        <span style={{color: '#EEAA00'}}> La Unidad Latina, Lambda Upsilon Lambda Fraternity, Inc.
+                            </span>, the premier Latino Fraternity at Duke University 
+                        . LUL prioritizes
                         
                         </p>
                             
                         <p> 
-                        Place holder text, I will edit this later for use of LUL. 
+                        Academic Excellence. 
                         </p>
 
                         <p> 
-                        Place holder  second text, I will edit this later for use of LUL. 
+                        Cultural Awareness. 
                         </p>
 
                         <p className="text-primary">  Learn more about 1982. </p>
@@ -59,15 +63,15 @@ const Showcase = () => {
 
                 <div className="max-w-3xs space-y-14">
                     <div className="space-y-2">
-                        <p> Up to </p>
-                        <h3> 4x faster</h3>
-                        <p> pro rendering performance than M2 </p>
+                        <p> With </p>
+                        <h3> 98 chapters</h3>
+                        <p> throughout the entire United States. </p>
                     </div>
 
                     <div className="space-y-2">
                         <p> Up to </p>
-                        <h3> 1.5x faster</h3>
-                        <p> CPU performance than M2 </p>
+                        <h3> 70+</h3>
+                        <p> Nationalities represented. </p>
                     </div>
                 </div>
 
