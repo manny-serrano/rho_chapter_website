@@ -14,7 +14,7 @@ const Performance = () => {
   useGSAP(() => {
     const isMobile = window.innerWidth <= 1024;
 
-    // Text animation - fade in and move up
+   
 
     gsap.fromTo(".content p", {
       opacity: 0,
@@ -23,7 +23,7 @@ const Performance = () => {
       ease: 'power2.out',
       scrollTrigger: {
         trigger: '.content p',
-        start: 'top bottom',
+        start: 'top bottom', 
         end: 'top center', 
         scrub: true,
         invalidateOnRefresh: true, 
