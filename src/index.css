@@ -224,6 +224,10 @@ body {
         @apply font-semibold text-xl lg:text-5xl text-white;
       }
     }
+
+    .mission-paragraph {
+      @apply opacity-0;
+    }
   }
 
   #performance {

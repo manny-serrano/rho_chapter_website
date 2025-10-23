@@ -1,26 +1,50 @@
 import { useMediaQuery } from "react-responsive";
 import { useGSAP } from "@gsap/react";
-import gsap from 'gsap'; 
+import gsap from 'gsap';
+import { useRef } from 'react';
+
 const Showcase = () => {
 
-    const isTablet = useMediaQuery({query: '(max-width: 1024px)'}); 
+    const isTablet = useMediaQuery({query: '(max-width: 1024px)'});
+    const paragraphRef = useRef(null);
 
     useGSAP(()=> {
         if(!isTablet){
             const timeline =gsap.timeline({
                 scrollTrigger: {
 
-                    trigger: '#showcase', 
-                    start: 'top top', 
-                    end: 'bottom top', 
-                    scrub: true, 
-                    pin: true, 
+                    trigger: '#showcase',
+                    start: 'top top',
+                    end: 'bottom top',
+                    scrub: true,
+                    pin: true,
                 }
-            }); 
+            });
 
-            timeline.to('.mask img', {transform: 'scale(1.1)'}).to('.content', {opacity:1, y:0, ease: 'power1.in'}); 
+            timeline.to('.mask img', {transform: 'scale(1.1)'}).to('.content', {opacity:1, y:0, ease: 'power1.in'});
 
         }
+
+        // Scroll animation for the mission paragraph
+        gsap.fromTo('.mission-paragraph',
+            {
+                opacity: 0,
+                y: 50
+            },
+            {
+                opacity: 1,
+                y: 0,
+                duration: 1,
+                ease: 'power2.out',
+                scrollTrigger: {
+                    trigger: '.mission-paragraph',
+                    start: 'top 80%',
+                    end: 'top 50%',
+                    scrub: 1,
+                }
+            }
+        );
+
     }, [isTablet])
   return (
     <section id ="showcase">
@@ -77,7 +101,16 @@ const Showcase = () => {
 
             </div>
         </div>
-    
+
+        <div className="content mission-paragraph">
+            <p className="container mx-auto px-5 2xl:px-0 text-xl lg:text-2xl text-center max-w-4xl py-20">
+                La Unidad Latina, Lambda Upsilon Lambda Fraternity, Incorporated primarily seeks to take a leadership role in meeting the needs of the Latino community through{' '}
+                <span className="text-white">
+                    academic achievement, cultural awareness, community service and promotion of the Latino culture and people.
+                </span>
+            </p>
+        </div>
+
     </section>
 
   )
