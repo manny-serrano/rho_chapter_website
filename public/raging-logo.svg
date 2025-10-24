@@ -2,7 +2,9 @@
 <defs>
 <mask id="textMask">
 <rect width="1920" height="1080" fill="white"/>
-<text x="960" y="600" font-family="Arial, sans-serif" font-size="380" font-weight="bold" fill="black" text-anchor="middle" dominant-baseline="middle">RAGING</text>
+<text x="960" y="480" font-family="Arial, sans-serif" font-size="350" font-weight="bold" fill="black" text-anchor="middle" dominant-baseline="middle">RAGING</text>
+<text x="960" y="760" font-family="Arial, sans-serif" font-size="350" font-weight="bold" fill="black" text-anchor="middle" dominant-baseline="middle">RHO</text>
+
 </mask>
 </defs>
 <rect width="1920" height="1080" fill="black" mask="url(#textMask)"/>

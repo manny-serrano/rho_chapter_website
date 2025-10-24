@@ -42,8 +42,7 @@ const Showcase = () => {
                         <p> Introducing {" "} the
                         <span style={{color: '#EEAA00'}}> Raging Rho Chapter </span>  of 
                         <span style={{color: '#EEAA00'}}> La Unidad Latina, Lambda Upsilon Lambda Fraternity, Inc.
-                            </span>, the premier Latino Fraternity at Duke University 
-                        . LUL prioritizes
+                            </span>, the premier Latino Fraternity at Duke University. LUL prioritizes
                         
                         </p>
                             

@@ -19,7 +19,7 @@ import { useEffect } from 'react';
 export default function MacbookModel14(props) {
     const {color} = useMacbookStore(); 
   const { nodes, materials, scene } = useGLTF('/models/macbook-14-transformed.glb'); 
-  const texture = useTexture('/LUL_CREST_2017 (1).png'); 
+  const texture = useTexture('/crestlogo.png'); 
   texture.colorSpace = SRGBColorSpace; 
   texture.needsUpdate = true; 
 

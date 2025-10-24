@@ -67,7 +67,7 @@ const Performance = () => {
   return (
     <section id="performance" ref={sectionRef}>
       <h2>
-        Be part of something great. Something ELITE.
+        Be part of something great. Something <span style={{color: '#EEAA00'}}> ELITE. </span>
       </h2>
       <div className="wrapper">
         {performanceImages.map(({id, src}) => (
