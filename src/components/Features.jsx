@@ -11,6 +11,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
 
+// Features of LUL, why join? for who // 
 
 gsap.registerPlugin(ScrollTrigger);
 
