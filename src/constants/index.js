@@ -28,7 +28,7 @@ const noChangeParts = [
 ];
 
 const performanceImages = [
-    { id: "p1", src: "/performance1.png" },
+    { id: "p1", src: "/ncregion.png" },
     { id: "p2", src: "/rhoconf.JPG" },
     { id: "p3", src: "/performance3.png" },
     { id: "p4", src: "/cleanup.jpg" },
