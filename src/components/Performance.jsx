@@ -5,6 +5,8 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { performanceImages, performanceImgPositions } from "../constants";
 import { useMediaQuery } from 'react-responsive';
 
+// Join , with photos of LUL brothers// 
+
 gsap.registerPlugin(ScrollTrigger);
 
 const Performance = () => {

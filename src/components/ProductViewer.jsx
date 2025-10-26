@@ -8,6 +8,7 @@ import StudioLights from "./three/StudioLights.jsx";
 import ModelSwitcher from './three/ModelSwitcher.jsx'; 
 import { useMediaQuery } from "react-responsive";
 
+//What is LUL, brief history?// 
 
 
 const ProductViewer = () => {

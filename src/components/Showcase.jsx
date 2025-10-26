@@ -2,7 +2,7 @@ import { useMediaQuery } from "react-responsive";
 import { useGSAP } from "@gsap/react";
 import gsap from 'gsap'; 
 const Showcase = () => {
-
+// SHowcase Raging Rho chapter, who we are at Duke, what we do...
     const isTablet = useMediaQuery({query: '(max-width: 1024px)'}); 
 
     useGSAP(()=> {
