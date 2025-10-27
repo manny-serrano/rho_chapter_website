@@ -1,10 +1,10 @@
 export const navLinks = [
-    {label: "Home" }, 
-    {label: "History" }, 
-    {label: "Rho Chapter" },
-    {label: "Our Pillars" },
-    {label: "Legacy"},
-    {label: "Contact"}
+    {label: "Home", link: "#hero"  }, 
+    {label: "History", link: "#product-viewer" }, 
+    {label: "Rho Chapter", link: "#showcase"},
+    {label: "Our Pillars", link: "#features" },
+    {label: "Legacy",  link: "#highlights"},
+    {label: "Contact", link: "#contact"}
 
 ]; 
 
