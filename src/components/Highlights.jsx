@@ -27,33 +27,39 @@ const Highlights = () => {
   })
   return (
     <section id="highlights">
-      <h2> There's never been a better time to join. </h2>
-      <h3> Heres what you get when you do. </h3> 
+      <h2 className="text-[#EEAA00]"> Our legacy. </h2>
+      <h3> Lambda Facts </h3> 
       <div className ="masonry">
           <div className ="left-column">
             <div>
-              <img src ="/laptop.png" alt="Laptop"/> 
-              <p> Fly through demanding tasks boi. </p>
+            <br/>
+            <br/>
+            <br/>
+              <p> <span style={{color: '#EEAA00'}}>Our Fraternal Motto:</span> "La Unidad Para Siempre" </p>
             </div> 
 
             <div>
-              <img src ="/sun.png" alt="Sun"/> 
-              <p> Stunning <br/> liquid HDR <br/> display.</p>
+            <img src ="/crestlogo.png" alt="Fraternal Crest" className="w-10 md:w-15 lg:w-25 h-auto max-w-full"/> 
+ 
+             
+              <p> Our Fraternal Colors: <br/>  <span style={{color: '#653819'}}>Brown</span>,  <span style={{color: '#EEAA00'}}>Gold</span>, <span style={{color: '#CC0000'}}>Red</span>  <br/> and White.</p>
 
             </div> 
 
           </div>
 
           <div className ="right-column">
+          
             <div className ="apple-gradient">
-              <img src ="/ai.png" alt="AI"/> 
-              <p> Built for <br/> <span>APPLE Intelligence </span> </p>
-            </div> 
+              <img src ="/goodnetwork.svg" alt="Network" className="w-10 md:w-15 lg:w-25 h-auto max-w-full"/> 
+              <p><span>Elite Alumni</span><br/>Network at 9 of the <span> top 10 U.S. colleges</span></p>     
+                     </div> 
 
-            <div>
-              <img src ="/battery.png" alt="Battery"/> 
-              <p> Up to <span className ="green-gradient"> {' '}14 more hours {' '}</span> of battery life.
-               <span className ="text-dark-100">{' '}liquid HDR  display. </span></p>
+            <div> 
+             
+              <img src ="/academiccap.svg" alt="Gradiation Cap" className="w-10 md:w-15 lg:w-25 h-auto max-w-full"/> 
+              <p> Only  Latino Fraternity to be chartered <span className ="red-gradient"> {' '} at all Ivy League Universities</span>.
+               </p>
               
             </div> 
 

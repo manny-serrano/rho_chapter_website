@@ -2,8 +2,8 @@ export const navLinks = [
     {label: "Home" }, 
     {label: "History" }, 
     {label: "Rho Chapter" },
-    {label: "Join" },
-    {label: "Events"},
+    {label: "Our Pillars" },
+    {label: "Legacy"},
     {label: "Contact"}
 
 ]; 
@@ -30,11 +30,11 @@ const noChangeParts = [
 const performanceImages = [
     { id: "p1", src: "/ncregion.png" },
     { id: "p2", src: "/rhoconf.JPG" },
-    { id: "p3", src: "/performance3.png" },
-    { id: "p4", src: "/cleanup.jpg" },
+    { id: "p3", src: "/Dukebrothers.jpg" },
+    { id: "p4", src: "/rhoclassphoto.jpg" },
     { id: "p5", src: "/crestlogo.png" },
-    { id: "p6", src: "/performance6.png" },
-    { id: "p7", src: "/dcphoto.jpg" },
+    { id: "p6", src: "/dcphoto.jpg" },
+    { id: "p7", src: "/probate3.JPG" }
 ];
 
 const performanceImgPositions = [
@@ -55,7 +55,7 @@ const performanceImgPositions = [
     },
     {
         id: "p4",
-        right: -10,
+        right: -2,
         bottom: 0,
     },
     {
@@ -70,7 +70,7 @@ const performanceImgPositions = [
     },
     {
         id: "p7",
-        left: -5,
+        left: -2,
         bottom: 0,
     },
 ];
@@ -79,29 +79,29 @@ const features = [
     {
         id: 1,
         icon: "/feature-icon1.svg",
-        highlight: "Email AI.",
-        text: "Summarize and draft replies to emails instantly, so you stay on top of your inbox.",
-        styles: "left-5 md:left-20 top-[20%] opacity-0 translate-y-5",
+        highlight: "Academics.",
+        text: "We believe academic excellence is foundationally important for the advancement of our community.",
+        styles: "left-5 md:left-20 top-[25%] opacity-0 translate-y-5",
     },
     {
         id: 2,
-        icon: "/feature-icon2.svg",
-        highlight: "Image AI.",
-        text: "Generate or edit images with ease. Just type what you imagine, and let AI bring it to life.",
-        styles: "right-5 md:right-20 top-[30%] opacity-0 translate-y-5",
+        icon: "/earth.svg",
+        highlight: "Culture.",
+        text: "As a Latino-based Fraternity, we pride ourselves in knowing that our membership is comprised of Hermanos from various backgrounds.",
+        styles: "right-5 md:right-20 top-[35%] opacity-0 translate-y-5",
     },
     {
         id: 3,
-        icon: "/feature-icon3.svg",
-        highlight: "Summarize AI.",
-        text: "Turn long articles, reports, or notes into clear, bite-sized summaries in seconds.",
+        icon: "/blackhands.svg",
+        highlight: "Brotherhood.",
+        text: "La Fraternidad promotes intellectual, cultural, and academic strength in its members in order to prepare them for lives as both leaders and team members, in their community and otherwise.",
         styles: "left-5 md:left-20 top-[50%] opacity-0 translate-y-5",
     },
     {
         id: 4,
-        icon: "/feature-icon4.svg",
-        highlight: "AirDrop.",
-        text: "Wirelessly share photos, large files, and more between your iPhone, your Mac, & other devices.",
+        icon: "/support.svg",
+        highlight: "Service.",
+        text: "We collaborate with individuals, organizations and institutions that will join our efforts to improve the conditions of the Latino community.",
         styles: "right-5 md:right-20 top-[70%] opacity-0 translate-y-5",
     },
     {
