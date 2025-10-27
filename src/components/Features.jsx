@@ -10,6 +10,7 @@ import useMacbookStore from "../store/index.js";
 import gsap from 'gsap'; 
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
+import TmanModel from "./models/Tmanlogo.jsx";
 
 // Features of LUL, why join? for who // 
 
@@ -20,26 +21,6 @@ const ModelScroll =() => {
     const isMobile =useMediaQuery({query: '(max-width: 1024px)'});
     const {setTexture} = useMacbookStore(); 
     
-    // preload all feature videos during component mount
-
-    useEffect(() => {
-
-        featureSequence.forEach((feature) => {
-            const v = document.createElement('video'); 
-
-            Object.assign (v, {
-                src: feature.videoPath, 
-                muted: true, 
-                playsInline: true, 
-                preload: 'auto', 
-                crossOrigin: 'anonymous', 
-
-
-            }); 
-
-            v.load(); // fetches the video 
-        })
-    }, []); 
 
     useGSAP(() => {
         const modelTimeline = gsap.timeline({
@@ -71,20 +52,17 @@ const ModelScroll =() => {
         // content and texture sync 
 
         timeline 
-            .call(() => setTexture('/videos/feature-1.mp4'))
+            
             .to('.box1', {opacity: 1, y: 0, delay: 1})
 
-            .call(() => setTexture('/videos/feature-2.mp4'))
+          
             .to('.box2', {opacity: 1, y: 0})
 
-            .call(() => setTexture('/videos/feature-3.mp4'))
             .to('.box3', {opacity: 1, y: 0})
 
-            .call(() => setTexture('/videos/feature-4.mp4'))
             .to('.box4', {opacity: 1, y: 0})
 
-            .call(() => setTexture('/videos/feature-5.mp4'))
-            .to('.box5', {opacity: 1, y: 0})
+            //.to('.box5', {opacity: 1, y: 0})
 
     }, []); 
 
@@ -93,7 +71,7 @@ const ModelScroll =() => {
 
         <group ref= {groupRef}>
             <Suspense fallback ={<Html> <h1 className="text-white text-3xl uppercase"> Loading...</h1></Html>}> 
-                <MacbookModel scale ={isMobile ? 0.05 : 0.08} position={[0, -1, 0]} /> 
+                <TmanModel scale ={isMobile ? 0.5 : 0.8} position={[0, -1, 0]} rotation={[Math.PI / 2, 0, 0]} color="#EEAA00" /> 
             </Suspense>
 
 
@@ -104,7 +82,7 @@ const ModelScroll =() => {
 const Features = () => {
   return (
     <section id ="features">
-        <h2> See it all in a new light. </h2>
+        <h2 className="text-[#EEAA00]"> Our Pillars. </h2>
 
         <Canvas id="f-canvas" camera={{}}> 
             <StudioLights /> 
@@ -121,11 +99,11 @@ const Features = () => {
 
                 <div className={clsx('box',`box${index + 1}`, feature.styles )}>
 
-                    <img src={feature.icon} alt ={feature.highlight} /> 
+                    <img src={feature.icon} alt ={feature.highlight}  className="w-16 h-16"/> 
 
-                    <p>
+                    <p className ="text-white">
 
-                        <span className ="text-white">  {feature.highlight} </span>
+                        <span className ="text-[#EEAA00]">  {feature.highlight} </span>
                         {feature.text}  
                         
                     </p>

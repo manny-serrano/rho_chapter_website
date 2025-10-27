@@ -4,7 +4,7 @@ const NavBar = () => {
   return (
    <header>
     <nav> 
-        <img src ="/LUL_Logo_Horizontal_Brown.png" alt= "LUL Logo" className="h-6 w-auto md:h-15" />
+        <img src ="/LUL_Logo_Horizontal_Gold.png" alt= "LUL Logo" className="w-20 md:w-30 lg:w-50 h-auto max-w-full"  />
         <ul>
             {navLinks.map(({ label }) => (
                 <li key = {label}> 

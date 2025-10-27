@@ -8,9 +8,9 @@ const Footer = () => {
 
       <div className ="info"> 
       <p>
-        More ways to get involved, blah blah blah, filler text: jjhfhdfh dhdh. 
+      Dedicated to leadership, academic excellence, cultural awareness, and community service. La Unidad Para Siempre. 
       </p>
-      <img src ="/LUL_Logo_Horizontal_Brown.png" alt= "LUL Logo" className="h-6 w-auto md:h-15" />
+      <img src ="/LUL_Logo_Horizontal_Gold.png" alt= "LUL Logo" className="w-20 md:w-30 lg:w-50 h-auto max-w-full"    />
       </div>
       
       <hr /> 
