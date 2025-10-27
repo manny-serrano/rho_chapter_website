@@ -32,10 +32,7 @@ const Highlights = () => {
       <div className ="masonry">
           <div className ="left-column">
             <div>
-            <br/>
-            <br/>
-            <br/>
-              <p> <span style={{color: '#EEAA00'}}>Our Fraternal Motto:</span> "La Unidad Para Siempre" </p>
+              <p className="mt-18"> <span className="text-[#EEAA00]">Our Fraternal Motto:</span> "La Unidad Para Siempre" </p>
             </div> 
 
             <div>

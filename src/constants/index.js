@@ -122,9 +122,9 @@ const featureSequence = [
 ];
 
 const footerLinks = [
-    { label: "Privacy Policy", link: "#" },
-    { label: "Terms of Use", link: "#" },
-    { label: "Sales Policy", link: "#" },
+    { label: "Website by Hermano E. Serrano", link: "https://www.linkedin.com/in/emmanuel-serrano-campa" },
+    { label: "Duke Groups", link: "https://duke.campusgroups.com/feeds?type=club&type_id=28763&tab=about" },
+    { label: "Instagram", link: "https://www.instagram.com/duke_lul/?hl=en" },
     { label: "Legal", link: "#" },
     { label: "Site Map", link: "#" },
 ];
