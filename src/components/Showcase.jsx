@@ -42,19 +42,25 @@ const Showcase = () => {
                         <p> Introducing {" "} the
                         <span style={{color: '#EEAA00'}}> Raging Rho Chapter </span>  of 
                         <span style={{color: '#EEAA00'}}> La Unidad Latina, Lambda Upsilon Lambda Fraternity, Inc.
-                            </span>, the premier Latino Fraternity at Duke University. LUL prioritizes
+                            </span>, the premier Latino Fraternity at Duke University. 
                         
+                        </p>
+                        <p> 
+                            In Spring 1995, seven visionary gentlemen established the Rho Chapter at Duke, bringing a new type 
+                            of organization to campus—one dedicated to uniting students and serving not only the Latino community, 
+                            but any under-represented group both on and off campus.
                         </p>
                             
                         <p> 
-                        Academic Excellence. 
+                            <span style={{color: '#EEAA00'}}>Community service</span> has been integral to how we show respect 
+                            for our community and environment, from cleaning up areas around campus to facilitating Duke's Latino 
+                            Student Recruitment Weekend (LSRW), featuring our signature event: <span style={{color: '#EEAA00'}}>Noche Dorada</span>.
                         </p>
 
-                        <p> 
-                        Cultural Awareness. 
-                        </p>
+                       
 
                         <p className="text-primary">  Learn more about 1982. </p>
+                        
 
                     </div>
 
@@ -62,16 +68,26 @@ const Showcase = () => {
 
                 <div className="max-w-3xs space-y-14">
                     <div className="space-y-2">
-                        <p> With </p>
-                        <h3> 98 chapters</h3>
-                        <p> throughout the entire United States. </p>
+                        <p>Part of</p>
+                        <h3>98 chapters</h3>
+                        <p>throughout the United States</p>
                     </div>
 
                     <div className="space-y-2">
-                        <p> Up to </p>
-                        <h3> 70+</h3>
-                        <p> Nationalities represented. </p>
+                        <p>Since</p>
+                        <h3>1995</h3>
+                        <p>serving Duke & Durham</p>
+
+                                           
                     </div>
+                    <div>
+                    <img 
+                            src="/rhoold.png" 
+                            alt="Rho Chapter" 
+                            className="mt-5 rounded-lg object-cover w-full scale-155" />  
+                    </div>
+
+                    
                 </div>
 
             </div>

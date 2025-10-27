@@ -208,6 +208,7 @@ body {
         }
       }
     }
+    
     .content {
       @apply relative z-10 my-5 lg:-mt-40 bg-black font-semibold text-xl text-dark-100 lg:opacity-0;
 
