@@ -78,7 +78,7 @@ const Performance = () => {
       </div>
 
       <div className="content">
-        <h2 className="text-[#EEAA00]"> Mission Statement. </h2> 
+        <h2 className="text-[#EEAA00]"> Mission Statement </h2> 
         <p className ="text-white">
           La Unidad Latina, Lambda Upsilon Lambda Fraternity, Incorporated primarily seeks to take a leadership role in
           meeting the needs of the Latino community through
