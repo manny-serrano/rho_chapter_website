@@ -1,5 +1,11 @@
+import { useMediaQuery } from "react-responsive";
+import { useEffect } from "react";
 
 const Contact = () => {
+  const isMobile = useMediaQuery({ query: '(max-width: 1024px)'}); 
+
+
+
   return (
     <section id="contact" className="container mx-auto px-5 py-20">
 
