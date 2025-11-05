@@ -1,5 +1,5 @@
 import React from 'react'
-import { navLinks } from '../constants'
+import { navLinks, shoppingLink } from '../constants'
 const NavBar = () => {
   return (
    <header>
@@ -17,9 +17,9 @@ const NavBar = () => {
             <button> 
                 <img src = "/search.svg" alt = "Search"/>
             </button>
-            <button> 
+            <a href={shoppingLink} className="cursor-pointer">
                 <img src = "/cart.svg" alt = "Cart"/>
-            </button>
+            </a>
         </div>
 
     </nav>

@@ -6,7 +6,50 @@ export const navLinks = [
     {label: "Legacy",  link: "#highlights"},
     {label: "Contact", link: "#contact"}
 
-]; 
+];
+
+export const shoppingLink = "https://progreekapparel.com/product-category/fraternity/lul/"; 
+
+ const contactFormFields = [
+  {
+    id: "name",
+    name: "name",
+    type: "text",
+    label: "Name",
+    placeholder: "Enter your name",
+    required: true
+  },
+  {
+    id: "email",
+    name: "email",
+    type: "email",
+    label: "Email Address",
+    placeholder: "Enter your email",
+    required: true
+  },
+  {
+    id: "message",
+    name: "message",
+    type: "textarea",
+    label: "Message",
+    placeholder: "Your message",
+    required: true,
+    rows: 5
+  }
+];
+
+ const contactContent = {
+  title: "Contact Us",
+  subtitle: "Reach out and connect with us.",
+  button: {
+    default: "Send Message",
+    sending: "Sending..."
+  },
+  messages: {
+    success: "Thank you! Your message has been sent successfully.",
+    error: "Something went wrong. Please try again."
+  }
+};
 
 const noChangeParts = [
     "Object_84",
@@ -136,4 +179,6 @@ export {
     noChangeParts,
     performanceImages,
     performanceImgPositions,
+    contactFormFields,
+    contactContent,
 };

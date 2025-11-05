@@ -400,6 +400,55 @@ body {
     }
   }
 
+  #contact {
+    @apply container mx-auto px-5 py-20 lg:py-32;
+
+    h1 {
+      @apply text-[#EEAA00] font-semibold text-3xl lg:text-6xl text-center mb-4;
+    }
+
+    h2 {
+      @apply text-white text-lg lg:text-xl opacity-90 text-center;
+    }
+
+    form {
+      @apply space-y-6;
+
+      label {
+        @apply block text-white font-medium mb-2 text-sm lg:text-base;
+      }
+
+      input,
+      textarea {
+        @apply w-full px-4 py-3 bg-[#1D1D1F] border border-[#424245] rounded-lg text-white placeholder-[#86868b] focus:outline-none focus:border-[#EEAA00] focus:ring-1 focus:ring-[#EEAA00] transition-all duration-300;
+      }
+
+      textarea {
+        @apply resize-none;
+      }
+
+      .status-message {
+        @apply text-center py-3 px-4 rounded-lg;
+
+        &.success {
+          @apply bg-green-500/20 border border-green-500/50;
+
+          p {
+            @apply text-green-400 font-medium;
+          }
+        }
+
+        &.error {
+          @apply bg-red-500/20 border border-red-500/50;
+
+          p {
+            @apply text-red-400 font-medium;
+          }
+        }
+      }
+    }
+  }
+
   footer {
     @apply container mx-auto py-7 max-lg:px-5;
 
