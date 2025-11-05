@@ -2,7 +2,7 @@ import { useMediaQuery } from "react-responsive";
 import { useGSAP } from "@gsap/react";
 import gsap from 'gsap'; 
 const Showcase = () => {
-// SHowcase Raging Rho chapter, who we are at Duke, what we do...
+// Showcasing Raging Rho chapter, who we are at Duke, what we do...
     const isTablet = useMediaQuery({query: '(max-width: 1024px)'}); 
 
     useGSAP(()=> {
@@ -58,12 +58,26 @@ const Showcase = () => {
                         <p> 
                             <span style={{color: '#EEAA00'}}>Community service</span> has been integral to how we show respect 
                             for our community and environment, from cleaning up areas around campus to facilitating Duke's Latino 
-                            Student Recruitment Weekend (LSRW), featuring our signature event: <span style={{color: '#EEAA00'}}>Noche Dorada</span>.
+                            Student Recruitment Weekend (LSRW). We’re proud to continue building connections that strengthen Duke’s diverse community and uphold the values of La Unidad Latina.
                         </p>
 
-                       
+                        <div>
 
-                        <p className="text-primary">  Learn more about 1982. </p>
+                        <a 
+                            href="https://www.launidadlatina.org/" className="relative inline-block text-[#EEAA00]  transition-colors duration-300 hover:text-[#FFD369] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-[#FFD369] after:transition-all after:duration-300 hover:after:w-full"
+                            >
+                         Learn more about 1982. 
+                         </a>
+
+                        </div>
+                        
+                       
+                        
+                        
+                     
+                        
+                            
+                       
                         
 
                     </div>
