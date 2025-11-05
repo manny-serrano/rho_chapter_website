@@ -32,6 +32,10 @@ const Showcase = () => {
                 
             </div>
         </div>
+        <br/>
+        <br/> 
+        <br/> 
+
 
         <div className ="content">
             <div className ="wrapper">
