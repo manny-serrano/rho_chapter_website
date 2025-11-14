@@ -1,5 +1,5 @@
-# Rho Chapter Website
-Official website for the Rho Chapter of La Unidad Latina, Lambda Upsilon Lambda Fraternity, Inc. This immersive 3D web experience showcases the fraternity's legacy, history, and values through interactive models, dynamic animations, and engaging content.
+# Rho Chapter Website - La Unidad Latina, Lambda Upsilon Lambda Fraternity, Inc.
+Official website for the Rho Chapter of La Unidad Latina, Lambda Upsilon Lambda Fraternity, Inc. This immersive 3D web experience showcases the fraternity's legacy, history, and values through interactive models, dynamic animations, and engaging content.The website features custom Three.js models, dynamic GSAP ScrollTrigger animations, and responsive canvas rendering for an engaging user experience.
 
 ## Features
 
