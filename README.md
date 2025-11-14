@@ -55,4 +55,3 @@ This project does not specify a license in the provided codebase or context.
 
 *Note: The project context provided mentions this is the "Official repository for Rho Chapter of La Unidad Latina, Lambda Upsilon Lambda Fraternity, Inc.". It's assumed that the rights to use any logos, images, or content within this repository belong to the Rho Chapter. Ensure all assets are used in accordance with the fraternity's policies.*
 
-*README.md was made with [Etchr](https://etchr.dev)*
