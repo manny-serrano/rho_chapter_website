@@ -14,7 +14,7 @@ This is the official repository for the Rho Chapter of La Unidad Latina, Lambda 
 ## Usage
 To explore the Rho Chapter website:
 
-1.  Navigate to the deployed website (link typically found in the project's deployment section or a live demo link).
+1.  Navigate to the deployed website (link).
 2.  Scroll through the page to experience the animated sections, 3D models, and historical information.
 3.  Interact with the product viewer to explore different model configurations.
 4.  Use the navigation bar to jump to specific sections.
