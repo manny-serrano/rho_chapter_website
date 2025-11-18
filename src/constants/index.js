@@ -46,7 +46,7 @@ export const shoppingLink = "https://progreekapparel.com/product-category/frater
     sending: "Sending..."
   },
   messages: {
-    success: "Thank you! Your message has been sent successfully.",
+    success: "Thank you! We'll get back to you as soon as possible.",
     error: "Something went wrong. Please try again."
   }
 };

@@ -13,7 +13,7 @@ const Hero = () => {
             
         </div>
         <video ref = {videoRef} src = "/videos/hero.mov" autoPlay muted playsInline> </video>
-        <button> Join </button>
+        <button> <a href = "#contact"> Join </a>  </button>
         <p>Do you want to be part of the Elite?</p>
         
         
