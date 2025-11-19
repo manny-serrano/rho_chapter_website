@@ -17,7 +17,7 @@ const ProductViewer = () => {
   return (
     <section id ="product-viewer">
 
-        <h2> Take a closer look.</h2>
+        <h2> Explore Our History.</h2>
 
 
 
