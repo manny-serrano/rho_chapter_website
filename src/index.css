@@ -195,7 +195,7 @@ body {
       height: calc(100vh - 300px);
 
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       line-height: 1.7;
       -webkit-user-select: none;
       -moz-user-select: none;
@@ -240,13 +240,6 @@ body {
       content: counter(item);
     }
     
-    .animation-wrap-right .item:nth-child(2n+2) {
-      align-items: flex-start;
-    }
-    
-    .animation-wrap-right .item:nth-child(4n+4) {
-      align-items: flex-end;
-    }
   }
 
   #showcase {
