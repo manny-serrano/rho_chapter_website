@@ -157,29 +157,95 @@ body {
         @apply text-xs text-white bg-black/20 px-2 py-1 rounded-lg;
       }
 
-      .color-control {
-        @apply flex-between bg-neutral-800 rounded-full px-6 py-3 gap-4;
-
-        div {
-          @apply size-7 rounded-full cursor-pointer;
-        }
-
-        .active {
-          @apply ring-5 size-5 ring-light-100;
-        }
-      }
-
-      .size-control {
-        @apply small-medium flex-between bg-neutral-800 rounded-full px-6 py-2.5 gap-2;
-
-        div {
-          @apply size-8 rounded-full cursor-pointer bg-white text-black flex-center;
-        }
-      }
+      
+      
+    }
+    .horizontal-scroll-container {
+      overflow-x: hidden;
+      width: 100vw;
+      margin-left: calc(50% - 50vw);
+      margin-right: calc(50% - 50vw);
+      position: relative;
     }
 
-    #canvas {
-      @apply !w-full !h-[80vh] lg:!h-dvh relative z-40;
+    .pin-wrap, .animation-wrap-right {
+      display: flex;
+      position: relative;
+      z-index: 1;  
+      height: 100vh;
+
+    }
+
+    .pin-wrap {
+      width: 100vw;
+      box-sizing: border-box;
+      padding: 0 clamp(2rem, 6vw, 7rem);
+    }
+
+    .animation-wrap-right {
+      width: max-content;
+      gap: clamp(2rem, 4vw, 4.5rem);
+      padding-right: clamp(4rem, 10vw, 12rem);
+    }
+
+    .item {
+      position: relative;
+      padding: 150px 80px;
+      flex: 0 0 500px;
+      height: calc(100vh - 300px);
+
+      display: flex;
+      align-items: center;
+      line-height: 1.7;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      border-right: 1px solid rgba(0, 0, 0, 0.06);
+      background-color: transparent;
+      text-align: left;
+    }
+
+    .item p {
+      margin: 0;
+    }
+
+    .item-with-icon {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2rem;
+    }
+
+    .item-with-icon .timeline-icon {
+      width: clamp(2.5rem, 5vw, 4rem);
+      height: auto;
+    }
+
+    .item:before {
+      position: absolute;
+      font-size: 100px;
+      opacity: .13;
+      font-weight: bold;    
+      z-index: -1;
+      transform: translate(-30px, -50px);
+      line-height: 1;
+    }
+    
+    .animation-wrap-right {
+      counter-reset: item;
+    }
+    
+    .animation-wrap-right .item:before {
+      counter-increment: item;
+      content: counter(item);
+    }
+    
+    .animation-wrap-right .item:nth-child(2n+2) {
+      align-items: flex-start;
+    }
+    
+    .animation-wrap-right .item:nth-child(4n+4) {
+      align-items: flex-end;
     }
   }
 
