@@ -82,7 +82,7 @@ const ModelScroll =() => {
 const Features = () => {
   return (
     <section id ="features">
-        <h2 className="text-[#EEAA00]"> Our Pillars. </h2>
+        <h2 className="text-[#EEAA00]"> Our Pillars </h2>
 
         <Canvas id="f-canvas" camera={{}}> 
             <StudioLights /> 

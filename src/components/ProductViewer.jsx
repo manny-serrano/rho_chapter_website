@@ -10,6 +10,10 @@ const ProductViewer = () => {
   const timelineItems = [
     {
       text: "In the summer of 1981 at Cornell University, a group of Latino students began discussing the need for a Latino fraternity on campus. At the time, Latinos had limited options—joining either traditionally white or traditionally black fraternities. These conversations evolved from informal discussions into a vision for something different: a fraternity focused on Latino unity, culture, and academic excellence",
+      icon: {
+        src: "/cornelltower.jpg",
+        alt: "Cornell Clock Tower",
+      },
     },
     {
       text: "On September 15, 1981, La Unidad Latina was officially registered with Cornell University as a club, with plans to transition into a full fraternity. The core group gradually expanded, and from approximately 30 interested men, 13 committed members emerged to form the foundation of what would become Lambda Upsilon Lambda Fraternity.",

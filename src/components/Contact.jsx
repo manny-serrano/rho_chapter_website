@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { contactFormFields, contactContent } from "../constants";
+import { contactFormFields, contactContent, contactSocialLinks } from "../constants";
 
 const Contact = () => {
   const initialFormData = contactFormFields.reduce((acc, field) => {
@@ -49,12 +49,51 @@ const Contact = () => {
     return <input type={field.type} {...commonProps} />;
   };
 
+  const iconMap = {
+    instagram: (
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <rect x="3" y="3" width="18" height="18" rx="5" ry="5" fill="none" stroke="currentColor" strokeWidth="1.5" />
+        <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" strokeWidth="1.5" />
+        <circle cx="17.5" cy="6.5" r="1.25" fill="currentColor" />
+      </svg>
+    ),
+    facebook: (
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M14.5 8.5H16V5h-1.5c-2.5 0-4.5 2-4.5 4.5V12H8v3.5h2v5h3.5v-5H16V12h-2.5V9.5a1 1 0 0 1 1-1Z" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+    ),
+    network: (
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="6" cy="6" r="2.5" fill="none" stroke="currentColor" strokeWidth="1.5" />
+        <circle cx="18" cy="6" r="2.5" fill="none" stroke="currentColor" strokeWidth="1.5" />
+        <circle cx="12" cy="18" r="3" fill="none" stroke="currentColor" strokeWidth="1.5" />
+        <path d="M7.5 7.5 11 15M16.5 7.5 13 15" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+      </svg>
+    ),
+  };
+
   return (
     <section id="contact">
       <div className="max-w-xl mx-auto">
         <div className="text-center mb-12">
           <h1>{contactContent.title}</h1>
           <h2>{contactContent.subtitle}</h2>
+          <div className="contact-social-links" aria-label="Social media links">
+            {contactSocialLinks.map((link) => (
+              <a
+                key={link.id}
+                href={link.href}
+                target="_blank"
+                rel="noreferrer"
+                className="social-link"
+              >
+                <span className="social-icon">
+                  {iconMap[link.icon]}
+                </span>
+                <span>{link.label}</span>
+              </a>
+            ))}
+          </div>
         </div>
 
         <form onSubmit={handleSubmit}>

@@ -38,7 +38,7 @@ export const shoppingLink = "https://progreekapparel.com/product-category/frater
   }
 ];
 
- const contactContent = {
+const contactContent = {
   title: "Contact Us",
   subtitle: "Reach out and connect with us.",
   button: {
@@ -50,6 +50,27 @@ export const shoppingLink = "https://progreekapparel.com/product-category/frater
     error: "Something went wrong. Please try again."
   }
 };
+
+const contactSocialLinks = [
+  {
+    id: "instagram",
+    label: "Instagram",
+    href: "https://www.instagram.com/duke_lul/?hl=en",
+    icon: "instagram",
+  },
+  {
+    id: "facebook",
+    label: "Facebook",
+    href: "https://www.facebook.com/LULDukeRhoChapter",
+    icon: "facebook",
+  },
+  {
+    id: "duke-groups",
+    label: "Duke Groups",
+    href: "https://duke.campusgroups.com/feeds?type=club&type_id=28763&tab=about",
+    icon: "network",
+  },
+];
 
 const noChangeParts = [
     "Object_84",
@@ -166,10 +187,10 @@ const featureSequence = [
 
 const footerLinks = [
     { label: "Website by Hermano E. Serrano", link: "https://www.linkedin.com/in/emmanuel-serrano-campa" },
-    { label: "Duke Groups", link: "https://duke.campusgroups.com/feeds?type=club&type_id=28763&tab=about" },
-    { label: "Instagram", link: "https://www.instagram.com/duke_lul/?hl=en" },
-    { label: "Legal", link: "#" },
+    { label: "Parents", link: "https://www.launidadlatina.org/undergraduates/parents/" },
+    { label: "Anti-Hazing Policy", link: "https://www.launidadlatina.org/undergraduates/anti-hazing-policy/" },
     { label: "Site Map", link: "#" },
+    
 ];
 
 export {
@@ -181,4 +202,5 @@ export {
     performanceImgPositions,
     contactFormFields,
     contactContent,
+    contactSocialLinks,
 };
