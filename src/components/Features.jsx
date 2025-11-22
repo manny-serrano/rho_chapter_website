@@ -1,8 +1,8 @@
 import { Canvas } from "@react-three/fiber"; 
 import StudioLights from "./three/StudioLights";
-import {featureSequence, features} from "../constants/index.js"; 
+import {features} from "../constants/index.js"; 
 import clsx from "clsx"; 
-import { Suspense, useRef, useEffect } from "react";
+import { Suspense, useRef} from "react";
 import { useMediaQuery } from "react-responsive";
 import { Html } from "@react-three/drei"; 
 import useMacbookStore from "../store/index.js";
