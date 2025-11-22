@@ -14,12 +14,13 @@ const NavBar = () => {
         </ul>
 
         <div className = "flex-center gap-3">
-            <button> 
-                <img src = "/search.svg" alt = "Search"/>
-            </button>
-            <a href={shoppingLink} className="cursor-pointer">
-                <img src = "/cart.svg" alt = "Cart"/>
-            </a>
+        <a 
+      href={shoppingLink} 
+      className="flex items-center gap-2 text-white opacity-80 font-regular text-sm cursor-pointer hover:opacity-100 transition-all duration-300 ease-in-out"
+    >
+        <span className="hidden md:block">Shop</span>
+        <img src="/cart.svg" alt="Cart"/>
+    </a>
         </div>
 
     </nav>
