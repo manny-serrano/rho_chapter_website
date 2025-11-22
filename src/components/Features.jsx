@@ -5,7 +5,6 @@ import clsx from "clsx";
 import { Suspense, useRef, useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
 import { Html } from "@react-three/drei"; 
-import MacbookModel from "./models/Macbook.jsx";
 import useMacbookStore from "../store/index.js";
 import gsap from 'gsap'; 
 import { ScrollTrigger } from 'gsap/ScrollTrigger';

@@ -27,7 +27,7 @@ const Highlights = () => {
   })
   return (
     <section id="highlights">
-      <h2 className="text-[#EEAA00]"> Our legacy. </h2>
+      <h2 className="text-[#EEAA00]"> Our Legacy </h2>
       <h3> Lambda Facts </h3> 
       <div className ="masonry">
           <div className ="left-column">

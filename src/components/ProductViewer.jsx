@@ -26,7 +26,12 @@ const ProductViewer = () => {
       },
     },
     {
-      text: "The Mission & Purpose LUL was born from the need to address the limited Latino presence at Cornell and the lack of a focal point for Latino culture. Existing Latino student organizations didn't provide enough unity, and divisions existed among Latino students. The fraternity was created to offer a place for cultural expression, brotherhood, and unity—a home where students could find their cultural roots and build lifelong commitments to Latino empowerment and leadership within their communities.", 
+      text: "The Mission & Purpose LUL was born from the need to address the limited Latino presence at Cornell and the lack of a focal point for Latino culture. Existing Latino student organizations didn't provide enough unity, and divisions existed among Latino students. The fraternity was created to offer a place for cultural expression, brotherhood, and unity—a home where students could find their cultural roots and build lifelong commitments to Latino empowerment and leadership within their communities. " , 
+      
+
+      
+
+      
     },
   ];
 
@@ -97,6 +102,8 @@ const ProductViewer = () => {
             </div>
           </div>
         </div>
+       
+             
         
     </section>
    
