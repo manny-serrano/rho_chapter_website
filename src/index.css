@@ -193,7 +193,7 @@ body {
       position: relative;
       padding: clamp(2.5rem, 5vw, 4.5rem);
       flex: 0 0 clamp(20rem, 32vw, 36rem);
-      min-height: clamp(24rem, 65vh, 34rem);
+      height: clamp(24rem, 65vh, 34rem);
 
       display: flex;
       align-items: flex-start;
@@ -218,10 +218,22 @@ body {
       border-right: none;
     }
 
-    .item p {
+    .timeline-copy {
       margin: 0;
       color: inherit;
       text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+      overflow-y: auto;
+      max-height: 100%;
+      width: 100%;
+    }
+
+    .timeline-copy::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .timeline-copy::-webkit-scrollbar-thumb {
+      background-color: rgba(255, 255, 255, 0.3);
+      border-radius: 999px;
     }
 
 
@@ -234,6 +246,26 @@ body {
     .item-with-icon .timeline-icon {
       width: clamp(2.5rem, 5vw, 4rem);
       height: auto;
+    }
+
+    .timeline-title {
+      @apply text-white font-semibold text-2xl mb-4;
+    }
+
+    .founders-list {
+      list-style: decimal inside;
+      @apply text-white/95 text-base;
+      margin: 0;
+      padding-left: 0;
+    }
+
+    .founders-list li {
+      margin-bottom: 0.35rem;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    .timeline-footer {
+      @apply text-white font-semibold mt-4;
     }
 
     .item:before {

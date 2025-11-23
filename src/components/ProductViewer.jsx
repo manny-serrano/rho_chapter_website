@@ -9,20 +9,40 @@ const ProductViewer = () => {
   const sectionRef = useRef(null);
   const timelineItems = [
     {
-      text: "In the summer of 1981 at Cornell University, a group of Latino students began discussing the need for a Latino fraternity on campus. At the time, Latinos had limited options—joining either traditionally white or traditionally black fraternities. These conversations evolved from informal discussions into a vision for something different: a fraternity focused on Latino unity, culture, and academic excellence",
+      text: <>In the summer of 1981 at  <span style={{color: '#EEAA00'}}>Cornell University</span>, a group of Latino students began discussing the need for a Latino fraternity on campus. At the time, Latinos had limited options: joining either traditionally white or traditionally black fraternities. These conversations evolved from informal discussions into a vision for something different: a fraternity focused on  <span style={{color: '#EEAA00'}}> Latino unity, culture, and academic excellence.</span></>,
       
       background: "/cornelltower.jpg",
     },
     {
-      text: "On September 15, 1981, La Unidad Latina was officially registered with Cornell University as a club, with plans to transition into a full fraternity. The core group gradually expanded, and from approximately 30 interested men, 13 committed members emerged to form the foundation of what would become Lambda Upsilon Lambda Fraternity.",
+      text: <>On September 15, 1981, <span style={{color: '#EEAA00'}}> La Unidad Latina</span> was officially registered with Cornell University as a club. From approximately 30 interested men, <span style={{color: '#EEAA00'}}> 13 </span>committed members emerged. On <span style={{color: '#EEAA00'}}> Friday, February 19, 1982</span>, an initiation ceremony was held at Henry Villareal's home, where the group formally took their oaths and became the Founding Fathers (Los Fundadores) of<span style={{color: '#EEAA00'}}> La Unidad Latina, Lambda Upsilon Lambda Fraternity, Inc.</span>  February 19, 1982 is recognized as the official founding date of La Fraternidad.</>,
       background: "/ithaca-4904558_1920.jpg",
     },
     {
-      text: "The 13 Founding Fathers who established La Unidad Latina, Lambda Upsilon Lambda Fraternity, Inc. are: 1. Hermano William Barba, 2. Hermano Dennis DeJesus, 3. Hermano Hernando Londoño, 4. Hermano Jesse Luis, 5. Hermano Samuel Ramos, 6. Hermano Tomas Rincon, 7. Hermano Edwin Rivera, 8. Hermano Mario Rivera, 9. Hermano Victor Rodriguez, 10. Hermano Victor Silva, 11. Hermano Jose Torres, 12. Hermano Henry Villareal (Faculty Advisor), 13. Hermano Jim Ziebell (Cornell Administrator). Honorary Founder: Hermano Angel Montañez.",
+      text: (
+        <>
+          <h3 className="timeline-title"><span style={{color: '#EEAA00'}}> The Founding Fathers of La Unidad Latina are:</span></h3>
+          <ol className="founders-list">
+            <li>Hermano William Barba</li>
+            <li>Hermano Dennis DeJesus</li>
+            <li>Hermano Hernando Londoño</li>
+            <li>Hermano Jesse Luis</li>
+            <li>Hermano Samuel Ramos</li>
+            <li>Hermano Tomas Rincon</li>
+            <li>Hermano Edwin Rivera</li>
+            <li>Hermano Mario Rivera</li>
+            <li>Hermano Victor Rodriguez</li>
+            <li>Hermano Victor Silva</li>
+            <li>Hermano Jose Torres</li>
+            <li>Hermano Henry Villareal (Faculty Advisor)</li>
+            <li>Hermano Jim Ziebell (Cornell Administrator)</li>
+          </ol>
+          <p className="timeline-footer">*Honorary Founder: Hermano Angel Montañez</p>
+        </>
+      ),
       background: "/headergold.png",
     },
     {
-      text: "The Mission & Purpose LUL was born from the need to address the limited Latino presence at Cornell and the lack of a focal point for Latino culture. Existing Latino student organizations didn't provide enough unity, and divisions existed among Latino students. The fraternity was created to offer a place for cultural expression, brotherhood, and unity—a home where students could find their cultural roots and build lifelong commitments to Latino empowerment and leadership within their communities.",
+      text: <>Today,  <span style={{color: '#EEAA00'}}> La Fraternidad </span>has expanded far beyond Cornell, with chapters across the United States fulfilling the founders' vision to spread Latino unity and culture throughout the nation. As the premier Latino Greek organization,<span style={{color: '#EEAA00'}}> LUL</span> continues to develop the next generation of Latino leaders through mentorship, networking, and community service. Our mission remains steadfast: to <span style={{color: '#EEAA00'}}> unite Latinos across America, celebrate our rich cultural heritage, and empower our communities through brotherhood, academic excellence, and lifelong service.</span> </>,
       background: "/foundinghermanos.png",
     },
   ];
@@ -92,7 +112,7 @@ const ProductViewer = () => {
                     className={`item${item.icon ? " item-with-icon" : ""}${item.background ? " item-with-background" : ""}`}
                     style={backgroundStyles}
                   >
-                    <p>{item.text}</p>
+                    <div className="timeline-copy">{item.text}</div>
                     {item.icon && (
                       <img
                         src={item.icon.src}
