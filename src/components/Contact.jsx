@@ -1,52 +1,127 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useForm } from "react-hook-form";
 import { contactFormFields, contactContent, contactSocialLinks } from "../constants";
 
-const Contact = () => {
-  const initialFormData = contactFormFields.reduce((acc, field) => {
-    acc[field.name] = '';
-    return acc;
-  }, {});
+const defaultFormValues = contactFormFields.reduce((acc, field) => {
+  acc[field.name] = "";
+  return acc;
+}, {});
 
-  const [formData, setFormData] = useState(initialFormData);
+const EMAIL_PATTERN = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+const fieldValidations = {
+  name: {
+    required: {
+      value: true,
+      message: "Please enter your name",
+    },
+    maxLength: {
+      value: 60,
+      message: "Please use 60 characters or less",
+    },
+  },
+  email: {
+    required: {
+      value: true,
+      message: "Please enter an email address",
+    },
+    pattern: {
+      value: EMAIL_PATTERN,
+      message: "Please enter a valid email address",
+    },
+  },
+  message: {
+    required: {
+      value: true,
+      message: "Please enter a message",
+    },
+    maxLength: {
+      value: 750,
+      message: "Please keep messages under 750 characters",
+    },
+  },
+};
+
+const Contact = () => {
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm({ defaultValues: defaultFormValues });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-  };
+  useEffect(() => {
+    if (!submitStatus) {
+      return undefined;
+    }
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setSubmitStatus(null);
+    const timeoutId = setTimeout(() => setSubmitStatus(null), 10000);
 
-    // Simulate form submission for now
-    setTimeout(() => {
+    return () => clearTimeout(timeoutId);
+  }, [submitStatus]);
+
+  const onSubmit = async (data) => {
+    const webhookUrl = import.meta.env.VITE_CONTACT_WEBHOOK;
+
+    if (!webhookUrl) {
+      console.error("Missing Google Sheets webhook URL. Please set VITE_CONTACT_WEBHOOK in your environment.");
+      setSubmitStatus("error");
+      return;
+    }
+
+    try {
+      setIsSubmitting(true);
+      setSubmitStatus(null);
+
+      const formPayload = new FormData();
+      Object.entries(data).forEach(([key, value]) => formPayload.append(key, value));
+
+      await fetch(webhookUrl, {
+        method: "POST",
+        mode: "no-cors",
+        body: formPayload,
+      });
+
+      setSubmitStatus("success");
+      reset();
+    } catch (error) {
+      console.error("Failed to send contact form", error);
+      setSubmitStatus("error");
+    } finally {
       setIsSubmitting(false);
-      setSubmitStatus('success');
-      setFormData(initialFormData);
-    }, 1000);
+    }
   };
 
   const renderField = (field) => {
+    const error = errors[field.name];
+    const validationRules = fieldValidations[field.name] || (field.required ? { required: "This field is required" } : undefined);
     const commonProps = {
       id: field.id,
-      name: field.name,
-      value: formData[field.name],
-      onChange: handleChange,
       placeholder: field.placeholder,
-      required: field.required
+      "aria-invalid": error ? "true" : "false",
+      "aria-describedby": error ? `${field.id}-error` : undefined,
+      ...register(field.name, validationRules),
     };
 
-    if (field.type === 'textarea') {
-      return <textarea {...commonProps} rows={field.rows} />;
-    }
+    const inputNode =
+      field.type === "textarea" ? (
+        <textarea {...commonProps} rows={field.rows} />
+      ) : (
+        <input type={field.type} {...commonProps} />
+      );
 
-    return <input type={field.type} {...commonProps} />;
+    return (
+      <>
+        {inputNode}
+        {error && (
+          <span id={`${field.id}-error`} className="errorMessage">
+            {error.message}
+          </span>
+        )}
+      </>
+    );
   };
 
   const iconMap = {
@@ -96,7 +171,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit(onSubmit)} noValidate>
           {contactFormFields.map((field) => (
             <div key={field.id}>
               <label htmlFor={field.id}>{field.label}</label>
