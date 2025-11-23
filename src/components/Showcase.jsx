@@ -61,15 +61,7 @@ const Showcase = () => {
                             Student Recruitment Weekend (LSRW). We’re proud to continue building connections that strengthen Duke’s diverse community and uphold the values of La Unidad Latina.
                         </p>
 
-                        <div>
-
-                        <a 
-                            href="https://www.launidadlatina.org/" className="relative inline-block text-[#EEAA00]  transition-colors duration-300 hover:text-[#FFD369] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-[#FFD369] after:transition-all after:duration-300 hover:after:w-full"
-                            >
-                         Learn more about 1982. 
-                         </a>
-
-                        </div>
+                        
                         
                        
                         
@@ -87,7 +79,7 @@ const Showcase = () => {
                 <div className="max-w-3xs space-y-14">
                     <div className="space-y-2">
                         <p>Part of</p>
-                        <h3>98 chapters</h3>
+                        <h3>98+ chapters</h3>
                         <p>throughout the United States</p>
                     </div>
 
