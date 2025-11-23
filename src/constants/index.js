@@ -42,8 +42,8 @@ const contactContent = {
   title: "Contact Us",
   subtitle: "Reach out and connect with us.",
   button: {
-    default: "Send Message",
-    sending: "Sending..."
+    default: "Submit",
+    sending: "Submitting..."
   },
   messages: {
     success: "Thank you! We'll get back to you as soon as possible.",
@@ -189,7 +189,7 @@ const footerLinks = [
     { label: "Website by Hermano E. Serrano", link: "https://www.linkedin.com/in/emmanuel-serrano-campa" },
     { label: "Parents", link: "https://www.launidadlatina.org/undergraduates/parents/" },
     { label: "Anti-Hazing Policy", link: "https://www.launidadlatina.org/undergraduates/anti-hazing-policy/" },
-    { label: "Site Map", link: "#" },
+    { label: "National Website", link: "https://www.launidadlatina.org/" },
     
 ];
 
