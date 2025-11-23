@@ -12,7 +12,7 @@ const Highlights = () => {
   useGSAP(() =>{
       gsap.to(['.left-column', '.right-column'], {
         scrollTrigger: {
-          trigger: '#highlights', 
+          trigger: '#legacy', 
           start: isMobile ? 'bottom bottom' : 'top top'
         }, 
         y: 0, 
@@ -26,7 +26,7 @@ const Highlights = () => {
 
   })
   return (
-    <section id="highlights">
+    <section id="legacy">
       <h2 className="text-[#EEAA00]"> Our Legacy </h2>
       <h3> Lambda Facts </h3> 
       <div className ="masonry">

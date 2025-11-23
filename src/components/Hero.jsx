@@ -6,7 +6,7 @@ const Hero = () => {
         if(videoRef.current) videoRef.current.playbackRate = 1.0; 
     }, []); 
   return (
-    <section id= "hero">
+    <section id= "home">
         <div>
           
 

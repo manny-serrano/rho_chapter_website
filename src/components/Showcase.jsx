@@ -10,7 +10,7 @@ const Showcase = () => {
             const timeline =gsap.timeline({
                 scrollTrigger: {
 
-                    trigger: '#showcase', 
+                    trigger: '#rho', 
                     start: 'top top', 
                     end: 'bottom top', 
                     scrub: true, 
@@ -23,7 +23,7 @@ const Showcase = () => {
         }
     }, [isTablet])
   return (
-    <section id ="showcase">
+    <section id ="rho">
         <div className ="media">
             <video src="/videos/dukevideo.mp4" loop muted autoPlay playsInline/>
             <div className="mask">

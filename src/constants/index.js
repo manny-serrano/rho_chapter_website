@@ -1,9 +1,9 @@
 export const navLinks = [
-    {label: "Home", link: "#hero"  }, 
-    {label: "History", link: "#product-viewer" }, 
-    {label: "Rho Chapter", link: "#showcase"},
-    {label: "Our Pillars", link: "#features" },
-    {label: "Legacy",  link: "#highlights"},
+    {label: "Home", link: "#home"  }, 
+    {label: "History", link: "#history" }, 
+    {label: "Rho Chapter", link: "#rho"},
+    {label: "Our Pillars", link: "#pillars" },
+    {label: "Legacy",  link: "#legacy"},
     {label: "Contact", link: "#contact"}
 
 ];

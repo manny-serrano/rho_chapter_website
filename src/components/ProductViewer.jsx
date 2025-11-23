@@ -91,7 +91,7 @@ const ProductViewer = () => {
   }, []);
 
   return (
-    <section id="product-viewer" ref={sectionRef}>
+    <section id="history" ref={sectionRef}>
 
         <h2 className="text-[#EEAA00]"> Explore Our History</h2>
         

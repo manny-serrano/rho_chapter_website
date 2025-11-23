@@ -80,7 +80,7 @@ const ModelScroll =() => {
 
 const Features = () => {
   return (
-    <section id ="features">
+    <section id ="pillars">
         <h2 className="text-[#EEAA00]"> Our Pillars </h2>
 
         <Canvas id="f-canvas" camera={{}}> 
