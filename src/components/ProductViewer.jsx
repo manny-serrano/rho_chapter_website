@@ -79,7 +79,7 @@ const ProductViewer = () => {
   return (
     <section id="product-viewer" ref={sectionRef}>
 
-        <h2> Explore Our History.</h2>
+        <h2 className="text-[#EEAA00]"> Explore Our History</h2>
 
         <div className="horizontal-scroll-container">
           <div className="pin-wrap">
