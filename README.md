@@ -6,6 +6,19 @@ Official website for the Rho Chapter of La Unidad Latina, Lambda Upsilon Lambda 
 
 
 
+<div align="center">
+  <video
+    src="https://github.com/emmanuelserrano/rho_chapter_website/raw/main/public/videos/demovidRHO.mp4"
+    controls
+    muted
+    loop
+    style="max-width: 720px; width: 100%; border-radius: 12px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); margin: 1.5rem 0;"
+  >
+    Your browser does not support the video tag.
+  </video>
+  <em>Experience the Rho Chapter showcase in motion.</em>
+</div>
+
 **Immersive 3D Experience**  
 Interactive 3D models powered by Three.js create a visually rich interface. Custom MacBook models and other elements bring the fraternity's story to life with smooth, responsive rendering.
 
