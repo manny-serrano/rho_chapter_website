@@ -6,7 +6,7 @@ Official website for the Rho Chapter of La Unidad Latina, Lambda Upsilon Lambda 
 
 
 
-<div align="center" style="margin: 1.5rem 0;">
+
   <video width="630" height="300" controls muted loop src="https://raw.githubusercontent.com/emmanuelserrano/rho_chapter_website/main/public/videos/demovidRHO.mp4"></video>
   <br />
   <em>Experience the Rho Chapter showcase in motion.</em>
