@@ -2,11 +2,6 @@
 Official website for the Rho Chapter of La Unidad Latina, Lambda Upsilon Lambda Fraternity, Inc. This immersive 3D web experience showcases the fraternity's legacy, history, and values through interactive models, dynamic animations, and engaging content. The website features custom Three.js models, dynamic GSAP ScrollTrigger animations, and responsive canvas rendering for an engaging user experience.
 
 ## Features
-<div align=center>![Adobe Express - Screen Recording 2025-11-23 at 9 02 45 PM (1)](https://github.com/user-attachments/assets/6b0f2130-75bc-4df5-ad25-795c3f74b5e4)</div>
-
-
-
-
   <video width="630" height="300" controls muted loop src="https://raw.githubusercontent.com/emmanuelserrano/rho_chapter_website/main/public/videos/demovidRHO.mp4"></video>
   <br />
   <em>Experience the Rho Chapter showcase in motion.</em>
