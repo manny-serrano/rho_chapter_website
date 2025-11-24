@@ -54,19 +54,6 @@ Utility library enabling components to adapt dynamically to different screen siz
 4. **Navigate Easily**: Click navigation bar links to jump between sections
 5. **Get in Touch**: Use the contact form to send inquiries about membership or chapter information
 
-## Installation & Development
-
-```bash
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-
-# Build for production
-npm run build
-```
-
 ## Dependencies
 Key dependencies include React, Three.js, GSAP, Tailwind CSS, and Vite. For the complete list of dependencies and versions, refer to `package.json`.
 
