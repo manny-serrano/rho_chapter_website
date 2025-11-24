@@ -28,7 +28,7 @@ Users can explore customizable 3D models with adjustable colors and sizes, allow
 Built mobile-first with Tailwind CSS, the website delivers a seamless experience across all devices and screen sizes, from smartphones to desktop displays.
 
 **Contact & Engagement**  
-An integrated contact form makes it easy for prospective members and interested parties to reach out. The persistent navigation bar ensures easy access to all sections.
+An integrated contact form, powered by React Hook Form validation and a Google Sheets backend, makes it easy for prospective members and interested parties to reach out while keeping submissions organized. The persistent navigation bar ensures easy access to all sections.
 
 ## Technologies Used
 
