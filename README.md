@@ -4,7 +4,10 @@ Official website for the Rho Chapter of La Unidad Latina, Lambda Upsilon Lambda 
 ## Features
  
 
-https://github.com/user-attachments/assets/1fc161bd-0600-494f-8989-2d3b4b370bb1
+
+https://github.com/user-attachments/assets/55f1d1b9-5e3d-4948-b178-7f447b4f77cf
+
+
 
 
   <em>Experience the Rho Chapter showcase in motion.</em>
