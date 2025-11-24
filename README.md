@@ -8,7 +8,7 @@ Official website for the Rho Chapter of La Unidad Latina, Lambda Upsilon Lambda 
 
 <div align="center">
   <video
-    src="https://github.com/emmanuelserrano/rho_chapter_website/raw/main/public/videos/demovidRHO.mp4"
+    src="https://raw.githubusercontent.com/emmanuelserrano/rho_chapter_website/main/public/videos/demovidRHO.mp4"
     controls
     muted
     loop
