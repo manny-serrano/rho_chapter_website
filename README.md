@@ -14,7 +14,7 @@ https://github.com/user-attachments/assets/55f1d1b9-5e3d-4948-b178-7f447b4f77cf
 
 
 **Immersive 3D Experience**  
-Interactive 3D models powered by Three.js create a visually rich interface. Custom MacBook models and other elements bring the fraternity's story to life with smooth, responsive rendering.
+Interactive 3D model powered by Three.js create a visually rich interface. Custom fraternity symbol model and other elements bring the fraternity's story to life with smooth, responsive rendering.
 
 **Dynamic Scroll Animations**  
 GSAP ScrollTrigger creates captivating animations that respond to user scrolling, making the browsing experience engaging and interactive as users explore different sections.
@@ -22,11 +22,8 @@ GSAP ScrollTrigger creates captivating animations that respond to user scrolling
 **Chapter Showcase**  
 Dedicated sections highlight the Rho Chapter's history, achievements, and presence at Duke University, providing visitors with a comprehensive view of the chapter's impact and identity.
 
-**Interactive Model Viewer**  
-Users can explore customizable 3D models with adjustable colors and sizes, allowing them to interact with different aspects of the fraternity's visual identity.
-
 **Responsive Design**  
-Built mobile-first with Tailwind CSS, the website delivers a seamless experience across all devices and screen sizes, from smartphones to desktop displays.
+Built with Tailwind CSS, the website delivers a seamless experience across all devices and screen sizes, from smartphones to desktop displays.
 
 **Contact & Engagement**  
 An integrated contact form, powered by React Hook Form validation and a Google Sheets backend, makes it easy for prospective members and interested parties to reach out while keeping submissions organized. The persistent navigation bar ensures easy access to all sections.
@@ -59,8 +56,8 @@ Utility library enabling components to adapt dynamically to different screen siz
 ## Usage
 
 1. **Visit the Website**: Navigate to the deployed site to begin exploring
-2. **Scroll & Discover**: Experience scroll-triggered animations and 3D models as you move through the page
-3. **Interact with Models**: Use the product viewer to customize 3D elements with different colors and sizes
+2. **Scroll & Discover**: Experience scroll-triggered animations and 3D model as you move through the page
+3. **Interact with Models**: ScrollTrigger provides a way to interact with 3D model. 
 4. **Navigate Easily**: Click navigation bar links to jump between sections
 5. **Get in Touch**: Use the contact form to send inquiries about membership or chapter information
 
