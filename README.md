@@ -67,6 +67,9 @@ Utility library enabling components to adapt dynamically to different screen siz
 ## Dependencies
 Key dependencies include React, Three.js, GSAP, Tailwind CSS, and Vite. For the complete list of dependencies and versions, refer to `package.json`.
 
+## Acknowledgements
+- Front-end layout and GSAP usage was adapted from the Javascript Mastery tutorial series—credit to their team for the guidance and examples that shaped this section of the site. 
+
 ---
 
 *This repository and its contents are maintained by the Rho Chapter. All assets are used in accordance with the fraternity's policies.*
