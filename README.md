@@ -10,7 +10,7 @@ https://github.com/user-attachments/assets/55f1d1b9-5e3d-4948-b178-7f447b4f77cf
 
 
 
-  <em>Experience the Rho Chapter showcase in motion.</em>
+  <em>Experience the Rho Chapter Website in motion.</em>
 
 
 **Immersive 3D Experience**  
