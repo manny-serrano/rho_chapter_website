@@ -69,4 +69,4 @@ Front-end layout and GSAP usage was adapted from the Javascript Mastery tutorial
 
 ---
 
-*This repository and its contents are maintained by the Rho Chapter. All assets are used in accordance with the fraternity's policies.*
+*This repository and its contents are maintained by Emmanuel "Manny" Serrano and the Rho Chapter. All assets are used in accordance with the fraternity's policies.*
